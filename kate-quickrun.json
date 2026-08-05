@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Prof. Wyllian"
+            }
+        ],
+        "Category": "Editing",
+        "Description": "Runs the file open in the editor with a shortcut, no project or Makefile needed",
+        "Description[pt_BR]": "Executa o arquivo aberto no editor com um atalho, sem projeto nem Makefile",
+        "EnabledByDefault": true,
+        "Icon": "quickrun",
+        "Id": "kate-quickrun",
+        "License": "GPLv2+",
+        "Name": "Quick Run",
+        "Name[pt_BR]": "Quick Run",
+        "ServiceTypes": [
+            "KTextEditor/Plugin"
+        ],
+        "Version": "1.0"
+    }
+}

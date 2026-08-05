@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+ <!-- Ícone de aplicativo no tema hicolor. Nome sem hífen de propósito: um
+      nome como "quick-run" cairia na regra de fallback do freedesktop, que
+      remove o último componente e acabaria resolvendo para o "quick" do Breeze.
+      Ícone de aplicativo no tema hicolor (fallback universal). O hicolor não
+      possui variante escura, então as cores são escolhidas para contrastar
+      tanto em fundo claro quanto escuro, em vez de depender do esquema de
+      cores do tema — que o Breeze resolve mantendo dois temas separados. -->
+ <path fill="#2980b9" d="M3 3h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm0 2v12h16V5H3z"/>
+ <path fill="#27ae60" d="M5.5 7.2 10 9.9l-4.5 2.7V7.2z"/>
+ <path fill="#2980b9" d="M11.5 13h5v1.6h-5z"/>
+</svg>

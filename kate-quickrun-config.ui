@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KateRunPluginConfigUi</class>
+ <widget class="QWidget" name="KateRunPluginConfigUi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupMode">
+     <property name="title">
+      <string>Run Destination</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutMode">
+      <item>
+       <widget class="QRadioButton" name="radioOwnTerminal">
+        <property name="text">
+         <string>Quick Run Terminal</string>
+        </property>
+        <property name="toolTip">
+         <string>Terminal dedicated to Quick Run, in its own Kate panel. Does not interfere with the Terminal plugin's shell. Created on the first run and movable to any window edge.</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioEmbedded">
+        <property name="text">
+         <string>Kate Terminal</string>
+        </property>
+        <property name="toolTip">
+         <string>Uses the embedded terminal from Kate's Terminal plugin, sharing the same shell.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioExternal">
+        <property name="text">
+         <string>External Terminal</string>
+        </property>
+        <property name="toolTip">
+         <string>Opens a separate terminal window, with the emulator chosen below.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupQuickRun">
+     <property name="title">
+      <string>Quick Run Terminal</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutQuickRun">
+      <item>
+       <layout class="QFormLayout" name="formLayoutOwnTerm">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelOwnPosition">
+          <property name="text">
+           <string>Panel Position:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboOwnPosition"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelOwnIcon">
+          <property name="text">
+           <string>Panel Icon:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayoutOwnIcon">
+          <item>
+           <widget class="KIconButton" name="btnOwnIcon"/>
+          </item>
+          <item>
+           <spacer name="horizontalSpacerOwnIcon">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="labelOwnWidth">
+          <property name="text">
+           <string>Initial Width (left/right):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="editOwnWidth">
+          <property name="toolTip">
+           <string>Accepts "kate" (window width), "kate/N" (a fraction of it) or a number of pixels.</string>
+          </property>
+          <property name="placeholderText">
+           <string>kate/2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="labelOwnHeight">
+          <property name="text">
+           <string>Initial Height (top/bottom):</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="editOwnHeight">
+          <property name="toolTip">
+           <string>Accepts "kate" (window height), "kate/N" (a fraction of it) or a number of pixels.</string>
+          </property>
+          <property name="placeholderText">
+           <string>kate/3</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkFocusOnInput">
+        <property name="text">
+         <string>Focus the terminal when the program waits for user input</string>
+        </property>
+        <property name="toolTip">
+         <string>Applies to the Quick Run Terminal and the Kate Terminal. Focus is only moved while the program is blocked reading the keyboard (C, C++, Python, etc.). Asynchronous runtimes like Node.js do not trigger the detection.</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupExternal">
+     <property name="title">
+      <string>External Terminal</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutExternal">
+      <item>
+       <layout class="QFormLayout" name="formLayoutExternal">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelTerminal">
+          <property name="text">
+           <string>Terminal Emulator:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboTerminal"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelPosition">
+          <property name="text">
+           <string>Window Position:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboPosition"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="labelTermWidth">
+          <property name="text">
+           <string>Window Width:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="editTermWidth">
+          <property name="toolTip">
+           <string>Accepts "kate" (window width), "kate/N" (a fraction of it) or a number of pixels.</string>
+          </property>
+          <property name="placeholderText">
+           <string>kate/2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="labelTermHeight">
+          <property name="text">
+           <string>Window Height:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="editTermHeight">
+          <property name="toolTip">
+           <string>Accepts "kate" (window height), "kate/N" (a fraction of it) or a number of pixels.</string>
+          </property>
+          <property name="placeholderText">
+           <string>kate</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkEmbedWindow">
+        <property name="text">
+         <string>Snap the window next to Kate</string>
+        </property>
+        <property name="toolTip">
+         <string>Positions the external window snapped to the chosen edge of the Kate window, via KWin.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkFocusExternal">
+        <property name="text">
+         <string>Focus the external window on open</string>
+        </property>
+        <property name="toolTip">
+         <string>Activates the external terminal window as soon as it appears. Unchecked, focus stays in the editor. Unlike the embedded terminal, here focus is given on open, not on each input.</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupIcon">
+     <property name="title">
+      <string>Toolbar Appearance</string>
+     </property>
+     <layout class="QFormLayout" name="formLayoutIcon">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelIconName">
+        <property name="text">
+         <string>Button Icon:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayoutIcon">
+        <item>
+         <widget class="KIconButton" name="btnIconName">
+          <property name="toolTip">
+           <string>Click to choose an icon from the system theme.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacerIcon">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelIconText">
+        <property name="text">
+         <string>Button Text:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="editIconText">
+        <property name="toolTip">
+         <string>Name shown next to the icon when the toolbar is set to show text.</string>
+        </property>
+        <property name="placeholderText">
+         <string>Quick Run</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupFlags">
+     <property name="title">
+      <string>Compilation and Run Flags</string>
+     </property>
+     <layout class="QFormLayout" name="formLayoutFlags">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelCFLAGS">
+        <property name="text">
+         <string>GCC Flags (C):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="editCFLAGS"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelCPPFLAGS">
+        <property name="text">
+         <string>G++ Flags (C++):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="editCPPFLAGS"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelPYFLAGS">
+        <property name="text">
+         <string>Python Flags:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="editPYFLAGS"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelRUSTFLAGS">
+        <property name="text">
+         <string>Rustc Flags (Rust):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="editRUSTFLAGS"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelGOFLAGS">
+        <property name="text">
+         <string>Go Flags:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="editGOFLAGS"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="labelJAVAFLAGS">
+        <property name="text">
+         <string>Java Flags (javac):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="editJAVAFLAGS"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="labelNODEFLAGS">
+        <property name="text">
+         <string>Node.js Flags:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="editNODEFLAGS"/>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayoutCustom"/>
+      </item>
+      <item row="8" column="0" colspan="2">
+       <widget class="QPushButton" name="btnAddLanguage">
+        <property name="text">
+         <string>(+) Add new language</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KIconButton</class>
+   <extends>QPushButton</extends>
+   <header>KIconButton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,4 @@
+#!/usr/bin/make -f
+# Uses the CMake buildsystem; debhelper passes the KDE/Qt6 install dirs.
+%:
+	dh $@ --buildsystem=cmake

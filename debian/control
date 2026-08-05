@@ -1,0 +1,34 @@
+Source: kate-quickrun
+Section: editors
+Priority: optional
+Maintainer: Prof. Wyllian <wyllianbs@gmail.com>
+Build-Depends: debhelper-compat (= 13),
+ cmake,
+ extra-cmake-modules,
+ gettext,
+ qt6-base-dev,
+ libkf6texteditor-dev,
+ libkf6parts-dev,
+ libkf6i18n-dev,
+ libkf6iconthemes-dev,
+ libkf6service-dev,
+ libkf6xmlgui-dev,
+ libkf6coreaddons-dev,
+ libkf6config-dev
+Standards-Version: 4.7.0
+Homepage: https://github.com/wyllianbs/kate-quickrun
+Rules-Requires-Root: no
+
+Package: kate-quickrun
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, kate
+Recommends: konsole-kpart
+Description: Quick Run plugin for Kate - compile and run the current file
+ A native plugin for the Kate text editor (KDE Frameworks 6) that compiles
+ and runs the file open in the editor with a single shortcut, without a
+ project or Makefile.
+ .
+ Output goes to a dedicated Quick Run terminal panel, to Kate's embedded
+ Terminal, or to an external terminal window that can be snapped next to the
+ Kate window. Supports C, C++, Python, Rust, Go, Java, JavaScript (Node) and
+ user-defined languages.

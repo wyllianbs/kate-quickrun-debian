@@ -1,0 +1,423 @@
+# German translations for kate-quickrun package.
+# Copyright (C) 2026 THE kate-quickrun'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the kate-quickrun package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kate-quickrun\n"
+"Report-Msgid-Bugs-To: wyllianbs@gmail.com\n"
+"POT-Creation-Date: 2026-08-02 23:27-0300\n"
+"PO-Revision-Date: 2026-08-02 23:27-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: kate-quickrun.cpp:429
+msgctxt "Plugin configuration name"
+msgid "Quick Run"
+msgstr ""
+
+#: kate-quickrun.cpp:434
+msgctxt "Full plugin configuration title"
+msgid "Quick Run Settings"
+msgstr ""
+
+#: kate-quickrun.cpp:469
+msgid "Run Destination"
+msgstr ""
+
+#: kate-quickrun.cpp:470 kate-quickrun.cpp:476 kate-quickrun.cpp:986
+msgid "Quick Run Terminal"
+msgstr ""
+
+#: kate-quickrun.cpp:471
+msgid ""
+"Terminal dedicated to Quick Run, in its own Kate panel. Does not interfere "
+"with the Terminal plugin's shell. Created on the first run and movable to "
+"any window edge."
+msgstr ""
+
+#: kate-quickrun.cpp:472 kate-quickrun.cpp:1052
+msgid "Kate Terminal"
+msgstr ""
+
+#: kate-quickrun.cpp:473 kate-quickrun.cpp:1056
+msgid ""
+"Uses the embedded terminal from Kate's Terminal plugin, sharing the same "
+"shell."
+msgstr ""
+
+#: kate-quickrun.cpp:474 kate-quickrun.cpp:485 kate-quickrun.cpp:1060
+#: kate-quickrun.cpp:1842
+msgid "External Terminal"
+msgstr ""
+
+#: kate-quickrun.cpp:475
+msgid "Opens a separate terminal window, with the emulator chosen below."
+msgstr ""
+
+#: kate-quickrun.cpp:477
+msgid "Panel Position:"
+msgstr ""
+
+#: kate-quickrun.cpp:478
+msgid "Panel Icon:"
+msgstr ""
+
+#: kate-quickrun.cpp:479
+msgid "Initial Width (left/right):"
+msgstr ""
+
+#: kate-quickrun.cpp:480 kate-quickrun.cpp:489
+msgid ""
+"Accepts \"kate\" (window width), \"kate/N\" (a fraction of it) or a number "
+"of pixels."
+msgstr ""
+
+#: kate-quickrun.cpp:481
+msgid "Initial Height (top/bottom):"
+msgstr ""
+
+#: kate-quickrun.cpp:482 kate-quickrun.cpp:491
+msgid ""
+"Accepts \"kate\" (window height), \"kate/N\" (a fraction of it) or a number "
+"of pixels."
+msgstr ""
+
+#: kate-quickrun.cpp:483
+msgid "Focus the terminal when the program waits for user input"
+msgstr ""
+
+#: kate-quickrun.cpp:484
+msgid ""
+"Applies to the Quick Run Terminal and the Kate Terminal. Focus is only moved "
+"while the program is blocked reading the keyboard (C, C++, Python, etc.). "
+"Asynchronous runtimes like Node.js do not trigger the detection."
+msgstr ""
+
+#: kate-quickrun.cpp:486
+msgid "Terminal Emulator:"
+msgstr ""
+
+#: kate-quickrun.cpp:487
+msgid "Window Position:"
+msgstr ""
+
+#: kate-quickrun.cpp:488
+msgid "Window Width:"
+msgstr ""
+
+#: kate-quickrun.cpp:490
+msgid "Window Height:"
+msgstr ""
+
+#: kate-quickrun.cpp:492
+msgid "Snap the window next to Kate"
+msgstr ""
+
+#: kate-quickrun.cpp:493
+msgid ""
+"Positions the external window snapped to the chosen edge of the Kate window, "
+"via KWin."
+msgstr ""
+
+#: kate-quickrun.cpp:494
+msgid "Focus the external window on open"
+msgstr ""
+
+#: kate-quickrun.cpp:495
+msgid ""
+"Activates the external terminal window as soon as it appears. Unchecked, "
+"focus stays in the editor. Unlike the embedded terminal, here focus is given "
+"on open, not on each input."
+msgstr ""
+
+#: kate-quickrun.cpp:496
+msgid "Toolbar Appearance"
+msgstr ""
+
+#: kate-quickrun.cpp:497
+msgid "Button Icon:"
+msgstr ""
+
+#: kate-quickrun.cpp:498
+msgid "Click to choose an icon from the system theme."
+msgstr ""
+
+#: kate-quickrun.cpp:499
+msgid "Button Text:"
+msgstr ""
+
+#: kate-quickrun.cpp:500
+msgid "Name shown next to the icon when the toolbar is set to show text."
+msgstr ""
+
+#: kate-quickrun.cpp:501 kate-quickrun.cpp:821 kate-quickrun.cpp:1451
+#: kate-quickrun.cpp:1546
+msgid "Quick Run"
+msgstr ""
+
+#: kate-quickrun.cpp:502
+msgid "Compilation and Run Flags"
+msgstr ""
+
+#: kate-quickrun.cpp:503
+msgid "GCC Flags (C):"
+msgstr ""
+
+#: kate-quickrun.cpp:504
+msgid "G++ Flags (C++):"
+msgstr ""
+
+#: kate-quickrun.cpp:505
+msgid "Python Flags:"
+msgstr ""
+
+#: kate-quickrun.cpp:506
+msgid "Rustc Flags (Rust):"
+msgstr ""
+
+#: kate-quickrun.cpp:507
+msgid "Go Flags:"
+msgstr ""
+
+#: kate-quickrun.cpp:508
+msgid "Java Flags (javac):"
+msgstr ""
+
+#: kate-quickrun.cpp:509
+msgid "Node.js Flags:"
+msgstr ""
+
+#: kate-quickrun.cpp:510
+msgid "(+) Add new language"
+msgstr ""
+
+#: kate-quickrun.cpp:516
+msgctxt "Tool view position"
+msgid "Left"
+msgstr ""
+
+#: kate-quickrun.cpp:517
+msgctxt "Tool view position"
+msgid "Right"
+msgstr ""
+
+#: kate-quickrun.cpp:518
+msgctxt "Tool view position"
+msgid "Top"
+msgstr ""
+
+#: kate-quickrun.cpp:519
+msgctxt "Tool view position"
+msgid "Bottom (Default)"
+msgstr ""
+
+#: kate-quickrun.cpp:522
+msgctxt "Position option Left"
+msgid "Left"
+msgstr ""
+
+#: kate-quickrun.cpp:523
+msgctxt "Position option Top"
+msgid "Top"
+msgstr ""
+
+#: kate-quickrun.cpp:524
+msgctxt "Position option Right"
+msgid "Right (Default)"
+msgstr ""
+
+#: kate-quickrun.cpp:525
+msgctxt "Position option Bottom"
+msgid "Bottom"
+msgstr ""
+
+#: kate-quickrun.cpp:539 kate-quickrun.cpp:1075
+msgctxt "System default terminal"
+msgid "%1 (Default)"
+msgstr ""
+
+#: kate-quickrun.cpp:546
+msgid "No terminal emulator found"
+msgstr ""
+
+#: kate-quickrun.cpp:824
+msgctxt "Menu option to run code"
+msgid "Quick Run"
+msgstr ""
+
+#: kate-quickrun.cpp:831
+msgctxt "Menu option"
+msgid "Show/Hide Quick Run Terminal"
+msgstr ""
+
+#: kate-quickrun.cpp:835
+msgctxt "Menu option"
+msgid "Close Quick Run Terminal"
+msgstr ""
+
+#: kate-quickrun.cpp:909
+msgctxt "Menu option"
+msgid "Quick Run"
+msgstr ""
+
+#: kate-quickrun.cpp:911
+msgid ""
+"Compiles and runs the current file. Use the arrow to choose the run "
+"destination."
+msgstr ""
+
+#: kate-quickrun.cpp:972
+msgid "Left"
+msgstr ""
+
+#: kate-quickrun.cpp:973
+msgid "Right"
+msgstr ""
+
+#: kate-quickrun.cpp:974
+msgid "Top"
+msgstr ""
+
+#: kate-quickrun.cpp:975
+msgid "Bottom"
+msgstr ""
+
+#: kate-quickrun.cpp:979
+msgid "Pixels, or a fraction of Kate: kate, kate/2, kate/3…"
+msgstr ""
+
+#: kate-quickrun.cpp:987
+msgid ""
+"Destination: Quick Run Terminal. Click to select; the arrow opens the "
+"options."
+msgstr ""
+
+#: kate-quickrun.cpp:993
+msgid "Shows or hides the terminal panel, without ending the shell."
+msgstr ""
+
+#: kate-quickrun.cpp:995
+msgid "Ends the shell and removes the panel, freeing the space for the editor."
+msgstr ""
+
+#: kate-quickrun.cpp:1012
+msgid "Focus when waiting for input"
+msgstr ""
+
+#: kate-quickrun.cpp:1013
+msgid ""
+"Moves focus to the terminal when the program blocks reading the keyboard (C, "
+"C++, Python…). Asynchronous runtimes like Node.js are not detected."
+msgstr ""
+
+#: kate-quickrun.cpp:1017
+msgctxt "Submenu"
+msgid "Panel position"
+msgstr ""
+
+#: kate-quickrun.cpp:1018
+msgid "Which edge of the Kate window the panel is docked to."
+msgstr ""
+
+#: kate-quickrun.cpp:1025 kate-quickrun.cpp:1102
+msgid "Width (W):"
+msgstr ""
+
+#: kate-quickrun.cpp:1033 kate-quickrun.cpp:1110
+msgid "Height (H):"
+msgstr ""
+
+#: kate-quickrun.cpp:1061
+msgid ""
+"Destination: external terminal window. Click to select; the arrow opens the "
+"options."
+msgstr ""
+
+#: kate-quickrun.cpp:1066
+msgctxt "Submenu"
+msgid "Emulator"
+msgstr ""
+
+#: kate-quickrun.cpp:1067
+msgid "Which system terminal emulator will be opened."
+msgstr ""
+
+#: kate-quickrun.cpp:1084
+msgctxt "Submenu"
+msgid "Window position"
+msgstr ""
+
+#: kate-quickrun.cpp:1085
+msgid ""
+"Which edge of the Kate window the external window is snapped to (with "
+"docking enabled)."
+msgstr ""
+
+#: kate-quickrun.cpp:1117
+msgid "Snap next to Kate"
+msgstr ""
+
+#: kate-quickrun.cpp:1118
+msgid ""
+"Snaps the external window to the chosen edge of the Kate window, via KWin."
+msgstr ""
+
+#: kate-quickrun.cpp:1122
+msgid "Focus the window on open"
+msgstr ""
+
+#: kate-quickrun.cpp:1123
+msgid ""
+"Activates the external window when it appears. Unchecked, focus stays in the "
+"editor. Here focus is given on open, not on each input."
+msgstr ""
+
+#: kate-quickrun.cpp:1307
+msgid "Save the file before compiling."
+msgstr ""
+
+#: kate-quickrun.cpp:1328
+msgid ""
+"No valid terminal emulator is selected. Choose one in Settings → Configure "
+"Kate → Quick Run."
+msgstr ""
+
+#: kate-quickrun.cpp:1386
+msgid "File extension not supported for automatic compilation."
+msgstr ""
+
+#: kate-quickrun.cpp:1464
+msgid "Detach or re-dock"
+msgstr ""
+
+#: kate-quickrun.cpp:1468
+msgid "Hide the panel"
+msgstr ""
+
+#: kate-quickrun.cpp:1583
+msgid ""
+"Could not load the Konsole terminal component. Install the Konsole KPart "
+"package (on Debian/Ubuntu: konsole-kpart) or choose another run mode."
+msgstr ""
+
+#: kate-quickrun.cpp:1683
+msgid ""
+"Kate Terminal not found. Enable the \"Terminal\" plugin in Settings → "
+"Configure Kate → Plugins, or choose another destination in the Quick Run "
+"menu."
+msgstr ""
+
+#: kate-quickrun.cpp:1843
+msgid "External Terminal (%1)"
+msgstr ""
+
+#: kate-quickrun.cpp:2211
+msgid "Could not create the helper run script."
+msgstr ""
