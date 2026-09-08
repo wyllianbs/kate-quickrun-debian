@@ -1,13 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: kate-quickrun
+Upstream-Contact: Wyllian Bezerra da Silva <wyllianbs@gmail.com>
 Source: https://github.com/wyllianbs/kate-quickrun
 
 Files: *
-Copyright: 2026 Prof. Wyllian Bezerra da Silva <wyllianbs@gmail.com>
+Copyright: 2026 Wyllian Bezerra da Silva <wyllianbs@gmail.com>
 License: GPL-2+
 
 Files: debian/*
-Copyright: 2026 Prof. Wyllian Bezerra da Silva <wyllianbs@gmail.com>
+Copyright: 2026 Wyllian Bezerra da Silva <wyllianbs@gmail.com>
 License: GPL-2+
 
 License: GPL-2+

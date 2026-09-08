@@ -1,6 +1,22 @@
+kate-quickrun (1.0.1-2) unstable; urgency=medium
+
+  * Fix debian/watch regex to match GitHub's actual tag download URLs.
+  * Fix Maintainer name mismatch between debian/control and changelog
+    trailer that was misdetected as an NMU.
+  * Drop erroneous executable bit on debian/{changelog,control,copyright}.
+  * Bump Standards-Version to 4.7.4.
+  * Add Vcs-Browser/Vcs-Git and debian/upstream/metadata.
+  * Add Upstream-Contact to debian/copyright.
+  * Fix duplicate "Quick Run" entry in the Tools menu: the compile-and-run
+    action was being auto-added by Kate's plugin system regardless of the
+    XML gui definition. Moved the Ctrl+F5 shortcut to the destination
+    action, which is now the only entry shown in the menu.
+
+ -- Wyllian Bezerra da Silva <wyllianbs@gmail.com>  Wed, 05 Aug 2026 12:00:00 -0300
+
 kate-quickrun (1.0.1-1) unstable; urgency=medium
 
   * New upstream release: adds de, es, fr, it, ja, ru, zh_CN translations.
   * Initial release. (Closes: #1143622)
 
- -- Prof. Wyllian Bezerra da Silva <wyllianbs@gmail.com>  Wed, 05 Aug 2026 00:00:00 -0300
+ -- Wyllian Bezerra da Silva <wyllianbs@gmail.com>  Wed, 05 Aug 2026 00:00:00 -0300

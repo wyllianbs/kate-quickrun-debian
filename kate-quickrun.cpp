@@ -820,10 +820,8 @@ KateRunPluginView::KateRunPluginView(KateRunPlugin *plugin, KTextEditor::MainWin
 
     setComponentName(QStringLiteral("kate-quickrun"), i18n("Quick Run"));
 
-    m_runAction = actionCollection()->addAction(QStringLiteral("katerun_compile_and_run"));
+    m_runAction = new QAction(this);
     m_runAction->setText(i18nc("Menu option to run code", "Quick Run"));
-
-    actionCollection()->setDefaultShortcut(m_runAction, QKeySequence(Qt::CTRL | Qt::Key_F5));
 
     // Indicador de "visível" é dado pelo ícone de check (ver updateTerminalActions),
     // não pelo checkbox nativo; keepMenuOpen mantém o menu aberto ao alternar.
@@ -854,9 +852,8 @@ KateRunPluginView::KateRunPluginView(KateRunPlugin *plugin, KTextEditor::MainWin
         "<gui name=\"kate-quickrun\" version=\"11\">\n"
         "  <MenuBar>\n"
         "    <Menu name=\"tools\">\n"
-        "      <Action name=\"katerun_compile_and_run\"/>\n"
-        "      <Action name=\"katerun_toggle_terminal\"/>\n"
         "      <Action name=\"katerun_destination\"/>\n"
+        "      <Action name=\"katerun_toggle_terminal\"/>\n"
         "      <Action name=\"katerun_close_terminal\"/>\n"
         "    </Menu>\n"
         "  </MenuBar>\n"
@@ -910,6 +907,7 @@ void KateRunPluginView::buildDestinationMenu()
     menu->setPopupMode(QToolButton::MenuButtonPopup);
     menu->setToolTip(i18n("Compiles and runs the current file. Use the arrow to choose the run destination."));
     actionCollection()->addAction(QStringLiteral("katerun_destination"), menu);
+    actionCollection()->setDefaultShortcut(menu, QKeySequence(Qt::CTRL | Qt::Key_F5));
     connect(menu, &QAction::triggered, this, &KateRunPluginView::runCode);
     m_destinationAction = menu;
 

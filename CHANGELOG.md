@@ -97,4 +97,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 
 ---
 
-**Author:** Prof. Wyllian Bezerra da Silva — <wyllianbs@gmail.com>
+**Author:** Wyllian Bezerra da Silva — <wyllianbs@gmail.com>

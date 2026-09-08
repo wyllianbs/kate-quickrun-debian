@@ -1,7 +1,7 @@
 Source: kate-quickrun
 Section: editors
 Priority: optional
-Maintainer: Prof. Wyllian <wyllianbs@gmail.com>
+Maintainer: Wyllian Bezerra da Silva <wyllianbs@gmail.com>
 Build-Depends: debhelper-compat (= 13),
  cmake,
  extra-cmake-modules,
@@ -15,8 +15,10 @@ Build-Depends: debhelper-compat (= 13),
  libkf6xmlgui-dev,
  libkf6coreaddons-dev,
  libkf6config-dev
-Standards-Version: 4.7.0
+Standards-Version: 4.7.4
 Homepage: https://github.com/wyllianbs/kate-quickrun
+Vcs-Browser: https://github.com/wyllianbs/kate-quickrun-debian
+Vcs-Git: https://github.com/wyllianbs/kate-quickrun-debian.git
 Rules-Requires-Root: no
 
 Package: kate-quickrun

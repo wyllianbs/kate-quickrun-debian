@@ -69,8 +69,8 @@ reportbug --severity=wishlist --package=wnpp
 
 ### 4. Sign and upload the source package
 ```bash
-debsign ../kate-quickrun_1.0.1-1_source.changes
-dput mentors ../kate-quickrun_1.0.1-1_source.changes
+debsign ../kate-quickrun_1.0.1-2_source.changes
+dput mentors ../kate-quickrun_1.0.1-2_source.changes
 ```
 - On the package's mentors.debian.net page, enable "Needs a Sponsor"
 
@@ -96,11 +96,11 @@ dput mentors ../kate-quickrun_1.0.1-1_source.changes
 | Field | Value |
 |-------|-------|
 | **Name** | kate-quickrun |
-| **Version** | 1.0.1-1 |
+| **Version** | 1.0.1-2 |
 | **License** | GPL-2.0-or-later |
 | **Section** | editors |
 | **Priority** | optional |
-| **Maintainer** | Prof. Wyllian Bezerra da Silva <wyllianbs@gmail.com> |
+| **Maintainer** | Wyllian Bezerra da Silva <wyllianbs@gmail.com> |
 
 ## Dependencies
 
@@ -128,4 +128,4 @@ dput mentors ../kate-quickrun_1.0.1-1_source.changes
 ---
 
 *Last updated: 2026-08-05*
-*Maintainer: Prof. Wyllian Bezerra da Silva <wyllianbs@gmail.com>*
+*Maintainer: Wyllian Bezerra da Silva <wyllianbs@gmail.com>*

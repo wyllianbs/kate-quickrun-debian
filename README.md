@@ -127,7 +127,7 @@ Or use the convenience script: `./install.sh` (system-wide) or
 A prebuilt **amd64** package is provided on the release page. Install it with:
 
 ```bash
-sudo apt install ./kate-quickrun_1.0.1-1_amd64.deb
+sudo apt install ./kate-quickrun_1.0.1-2_amd64.deb
 ```
 
 `apt` pulls in the required KF6/Qt6 libraries automatically. On other
@@ -246,7 +246,7 @@ GPL-2.0-or-later. See the license header in the sources.
 
 ## 🙋 Author
 
-Prof. Wyllian Bezerra da Silva — wyllianbs@gmail.com
+Wyllian Bezerra da Silva — wyllianbs@gmail.com
 
 ---
 
