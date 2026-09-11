@@ -244,9 +244,12 @@ included under `po/`. To add a language or update translations, see
 
 GPL-2.0-or-later. See the license header in the sources.
 
-## 🙋 Author
+## 👤 Autor
 
-Wyllian Bezerra da Silva — wyllianbs@gmail.com
+**Prof. Wyllian Bezerra da Silva**  
+Universidade Federal de Santa Catarina (UFSC)  
+Departamento de Informática e Estatística (INE)
+
 
 ---
 
