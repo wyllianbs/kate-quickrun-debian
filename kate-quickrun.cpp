@@ -711,7 +711,7 @@ void KateRunConfigPage::reset()
     ui->editTermWidth->setText(config.readEntry("termWidth", QStringLiteral("kate/2")));
     ui->editTermHeight->setText(config.readEntry("termHeight", QStringLiteral("kate")));
 
-    ui->editCFLAGS->setText(config.readEntry("cFlags", QStringLiteral("-std=c23 -Wall -Wextra -lm")));
+    ui->editCFLAGS->setText(config.readEntry("cFlags", QStringLiteral("-std=c23 -Wall -Wextra -Wl,--no-as-needed -lm")));
     ui->editCPPFLAGS->setText(config.readEntry("cppFlags", QString()));
     ui->editPYFLAGS->setText(config.readEntry("pyFlags", QString()));
     ui->editRUSTFLAGS->setText(config.readEntry("rustFlags", QString()));
